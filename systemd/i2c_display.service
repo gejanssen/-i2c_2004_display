@@ -1,0 +1,17 @@
+[Unit]
+Description=i2c display autostart Service
+After=multi-user.target
+
+[Service]
+Type=idle
+## Werkt nog niet ## DTIJD="`/bin/date +'%T'`"
+## Werkt nog niet ## ExecStart=/usr/bin/python /home/pi/i2c_2004_display/lcd_2lines.py "`/bin/date +'%T'`" "Booting"
+ExecStart=/usr/bin/python /home/pi/i2c_2004_display/lcd_2lines.py ".... boot ...." "Booting"
+ExecStop=/usr/bin/python /home/pi/i2c_2004_display/lcd_2lines.py ".... stopping ...." "Halt"
+
+RemainAfterExit=yes
+
+User=root
+
+[Install]
+WantedBy=multi-user.target
