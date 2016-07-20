@@ -1,3 +1,17 @@
+# Beschrijving over hoe een ic2 display te gebruiken op een raspberry met python
+
+Plaatje
+
+Aansluit tabel
+
+Pin  | Description  | GPIO
+---- | -------------|------
+1    | GND          | 6 
+2    | VCC (+5V)    | 2 
+3    | SDA          | 3
+4    | SCL          | 5
+
+
 ## Install i2c tools
 ```
 	pi@rpi-z:~/i2c_2004_display $ sudo apt-get install python-smbus i2c-tools
