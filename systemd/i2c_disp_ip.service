@@ -1,0 +1,19 @@
+[Unit]
+# Dit is nog maar een probeersel.
+# Dit werkt nog niet
+Description=i2c display ip Service
+After=network.target
+
+[Service]
+Type=simple
+#ip="$(/sbin/ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1)"
+#hostn="$(/bin/hostname)"
+#ExecStartPre=/bin/bash -c "/bin/systemctl set-environment ip=$(/sbin/ip -o -4 addr list eno16777736 | awk '{print $4}' | cut -d/ -f1)"
+
+ExecStartPre=/bin/sh -c "/bin/sleep 40"
+ExecStart=/usr/bin/python /home/pi/i2c_2004_display "1"  "2hostn"
+TimeoutSec=0
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
