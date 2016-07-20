@@ -1,6 +1,16 @@
 # Beschrijving over hoe een ic2 display te gebruiken op een raspberry met python
 
+
+
 Plaatje
+
+[![badge](https://raw.githubusercontent.com/gejanssen/i2c_2004_display/master/IMG_4160-small.jpg)](https://raw.githubusercontent.com/gejanssen/i2c_2004_display/master/IMG_4160-small.jpg))
+
+en aansluitschema
+
+[![badge](https://raw.githubusercontent.com/gejanssen/i2c-dsth01-python/master/Raspberry-Pi-GPIO-Layout-Re-300x149.gif)](https://raw.githubusercontent.com/gejanssen/i2c-dsth01-python/master/Raspberry-Pi-GPIO-Layout-Re-300x149.gif)
+
+
 
 Aansluit tabel
 
