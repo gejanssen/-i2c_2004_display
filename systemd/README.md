@@ -5,6 +5,7 @@ Hier wordt beschreven hoe systemd werkt
 Voowaarden:
 	- werkende i2c display
 	- pad naar het i2c display script aangepast in i2c_display_service
+	- of alles draaien vanuit de pi user (/home/pi/i2c_2004_display)
 
 eerlijk gejat/geplakt van http://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/
 
